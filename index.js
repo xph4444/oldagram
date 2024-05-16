@@ -2,9 +2,10 @@ const posts = [
     {
         name: "Vincent van Gogh",
         username: "vincey1853",
-        location: "Paris, France",
+        location: "Zundert, Netherlands",
         avatar: "images/avatar-vangogh.jpg",
-        post: "https://www.singulart.com/blog/wp-content/uploads/2023/09/Self-portrait-with-Straw-Hat-1887-88.jpg",
+        post: "images/post-vangogh.jpg",
+        // post: "https://www.singulart.com/blog/wp-content/uploads/2023/09/Self-portrait-with-Straw-Hat-1887-88.jpg",
         comment: "It’s a dazzling display of brushwork and color that would give modern filters a run for their money..",
         likes: 21
     },
@@ -33,15 +34,14 @@ const postContainer = document.querySelector(".post-container");
 
 // 遍历 posts 数组
 posts.forEach(post => {
-    // 克隆帖子容器模板
+    // 克隆帖子容器模板。如果把cloneNode(true)去掉，只会加载最后一组数据；
     const postTemplate = document.querySelector(".post").cloneNode(true);
 
     // 在模板中填充数据
-    const userInfo = postTemplate.querySelector(".user-info");
-    userInfo.querySelector(".user-avatar").src = post.avatar;
-    userInfo.querySelector(".username").textContent = post.username;
-    userInfo.querySelector(".location").textContent = post.location;
-
+    // const userInfo = postTemplate.querySelector(".user-info");
+    postTemplate.querySelector(".user-avatar").src = post.avatar;
+    postTemplate.querySelector(".username").textContent = post.username;
+    postTemplate.querySelector(".location").textContent = post.location;
     postTemplate.querySelector(".post-image").src = post.post;
     postTemplate.querySelector(".commenter-content").textContent = post.comment;
     postTemplate.querySelector(".likes-data").textContent = `${post.likes} Likes`;
