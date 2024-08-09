@@ -1,15 +1,5 @@
 const posts = [
     {
-        name: "Vincent van Gogh",
-        username: "vincey1853",
-        location: "Zundert, Netherlands",
-        avatar: "images/avatar-vangogh.jpg",
-        post: "images/post-vangogh.jpg",
-        // post: "https://www.singulart.com/blog/wp-content/uploads/2023/09/Self-portrait-with-Straw-Hat-1887-88.jpg",
-        comment: "It’s a dazzling display of brushwork and color that would give modern filters a run for their money..",
-        likes: 21
-    },
-    {
         name: "Gustave Courbet",
         username: "gus1819",
         location: "Ornans, France",
@@ -18,6 +8,7 @@ const posts = [
         comment: "i'm feelin a bit stressed tbh",
         likes: 4
     },
+
     {
         name: "Joseph Ducreux",
         username: "jd1735",
@@ -26,6 +17,16 @@ const posts = [
         post: "images/post-ducreux.jpg",
         comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
         likes: 152
+    },
+    {
+        name: "Vincent van Gogh",
+        username: "vincey1853",
+        location: "Zundert, Netherlands",
+        avatar: "images/avatar-vangogh.jpg",
+        // post: "images/post-vangogh.jpg",
+        post: "https://www.singulart.com/blog/wp-content/uploads/2023/09/Self-portrait-with-Straw-Hat-1887-88.jpg",
+        comment: "It’s a dazzling display of brushwork and color that would give modern filters a run for their money..",
+        likes: 21
     }
 ]
 
